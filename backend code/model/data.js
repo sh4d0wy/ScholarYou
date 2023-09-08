@@ -4,7 +4,7 @@ const dataSchema = new mongoose.Schema({
         required:true,
         unique:true
     },
-    dob:{type:String,
+    dob:{type:Date,
         required:true},
     email:{type:String,
         required:true},

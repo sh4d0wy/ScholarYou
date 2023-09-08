@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="log-in">
+        <header class="header flex space-between">
+            <a href="">Logo</a>
+            <div class="nav">
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Services</a>
+                <a href="">contact</a>
+                <button class="botn">Login</button>
+            </div>
+        </header>
+        <section class="section">
+            <div class="wrapper flex col">
+                <span class="icon-close">
+                    <i class='bx bx-x' ></i>
+                </span>
+                <div class="box">
+                    <div class="form-box login">
+                        <!-- login form  -->
+                        <div class="title">
+                            <h2>Log-In</h2>
+                        </div>
+                        <form action="">
+                            <div class="input">
+                                <span class="icon"><i class='bx bxs-envelope'></i></span>
+                                <input type="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input">
+                                <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                                <input type="password" required>
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="forgot">
+                                <label><input type="checkbox">Remember me</label>
+                                <a href="">Forgot password?</a>
+                            </div>
+                            <button type="submit" class="btn">Login</button>
+                            <div class="reg">
+                                <p>Don't have an account?<a href="" class="register_"> Register</a></p>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- registration form  -->
+                    <div class="form-box register">
+                        <div class="title">
+                            <h2>Registration</h2>
+                        </div>
+                        <form action="">
+                            <div class="input">
+                                <span class="icon"><i class='bx bxs-user-circle' ></i></span>
+                                <input type="text" required>
+                                <label for="email">First Name</label>
+                            </div>
+                            <div class="input">
+                                <span class="icon"><i class='bx bxs-user-circle' ></i></span>
+                                <input type="text" required>
+                                <label for="email">Last Name</label>
+                            </div>
+                            
+                            <div class="input">
+                                <span class="icon"><i class='bx bxs-user-circle' ></i></span>
+                                <input type="text" required>
+                                <label for="email">User Name</label>
+                            </div>
+                            <div class="input">
+                                <span class="icon"><i class='bx bxs-envelope'></i></span>
+                                <input type="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="input">
+                                <span class="icon"><i class='bx bxs-lock-alt' ></i></span>
+                                <input type="password" required>
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="forgot">
+                                <label><input type="checkbox">I agree to terms and conditions</label>
+                            </div>
+                            <button type="submit" class="btn">Register</button>
+                            <div class="reg">
+                                <p>Already have an account? <a href="" class="login_">Login</a></p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
