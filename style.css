@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 1vw 2vw;
+    background-color:transparent;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left-align{
+    align-items: flex-start;
+}
+.col{
+    flex-direction: column;
+}
+.space-between{
+    justify-content: space-between;
+}
+.nav a{
+    font-size: 1.5vw;
+    color: white;
+    text-decoration: none;
+    margin-right: 2vw;
+}
+.nav .botn{
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5vw;
+    color: white;
+    cursor: pointer;
+}
+.section{
+    min-height: 100vh;
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.wrapper{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30vw;
+    height: 100%;
+    background: transparent;
+    backdrop-filter: blur(15px);
+    z-index: 100;
+    box-shadow: 1vw rgba(0,0,0,.2);
+    border-left: 0.1vw solid rgb(255,255,255,.2);
+    padding: 0 1.2vw;
+    opacity: 0;
+    pointer-events: none;
+}
+.icon-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2vw;
+    height: 2vw;
+    background: white;
+}
+.wrapper.button-active{
+    opacity: 1;
+    pointer-events: ;
+}
+.wrapper .box{
+    width: 100%;
+}
+.wrapper .form-box.login{
+    display: block;
+}
+.wrapper.active .form-box.login{
+    display: none;
+}
+.wrapper .form-box.register{
+    display: none;
+}
+.wrapper.active .form-box.register{
+    display: block;
+}
+.box .title{
+    text-align: center;
+    color: white;
+    margin-bottom: 2vw;
+}
+.title h2{
+    font-size: 2vw;
+}
+.box .input{
+    position: relative;
+    width: 100%;
+    height: 3vw;
+    margin: 2vw 0;
+    border-bottom: 2px solid white;
+}
+.input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline:none;
+    font-size: 1vw;
+    color: white;
+    font-weight: 500;
+    padding-right: 1vw;
+}
+.input label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: 1.2vw;
+    color: white;
+    pointer-events: none;
+    transition: .5s;
+}
+.input input:focus~label,
+.input input:valid~label{
+    top: -0.5vw;
+}
+.input .icon{
+    position: absolute;
+    color: white;
+    top: 50%;
+    right: 0;
+}
+.box .forgot{
+    font-size: 1vw;
+    color: white;
+    margin: -0.2vw 0 1vw;
+    display: flex;
+    justify-content: space-between;
+}
+.forgot input{
+    accent-color: white;
+    margin-right: 0.5vw;
+}
+.box .btn{
+    width: 100%;
+    height: 3vw;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 1vw;
+    cursor: pointer;
+    font-size: 1.3vw;
+    font-weight: 600;
+}
+.box .reg{
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+    margin-top: 1vw;
+}
