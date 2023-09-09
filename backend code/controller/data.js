@@ -1,4 +1,4 @@
-const dataModel = require('./model/data')
+const dataModel = require('../model/data')
 
 const addData = async (req,res)=>{
     const data = {
